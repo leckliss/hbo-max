@@ -1,0 +1,189 @@
+*{
+  padding: 0;
+  border: 0;
+  margin: 0;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+  background: rgb(0,0,0);
+  background: linear-gradient(50deg, rgba(88,18,93,100) 21%, rgba(31,33,104,20) 71%);
+}
+main{
+  height: 2000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header{
+  position: relative;
+  width: 100%;
+  height: 850px;
+  background-image:  linear-gradient(to bottom, transparent 0%, black 90%), url('img/banner.jpg');
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  overflow: hidden;
+}
+.ficaPreto {
+  background-color: rgba(0, 0, 0, 0.95);
+
+}
+nav{
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+}
+myVideo{
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+}
+#preto{
+  position: absolute;
+  background-image: linear-gradient(to bottom, transparent, black 85%);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  margin-top: -1000px;
+}
+#menu{
+  text-decoration: none;
+  color: white;
+  opacity: 0.6;
+  position: absolute;
+  margin-left: 5.5%;
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+#menu:hover{
+  opacity: 1;
+}
+#menu1{
+  position: absolute;
+  margin-left: 3%;
+  opacity: 0.6;
+}
+#menu1:hove{
+  opacity: 1;
+}
+#menu2{
+  position: absolute;
+  margin-left: 47%;
+}
+#menu3{
+  position: absolute;
+  margin-left: 87%;
+}
+#menu4{
+  position: absolute;
+  margin-left: 90%;
+}
+#banner{
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  margin-left: 70px;
+  margin-top: -650px;
+  color: white;
+  z-index: 2;
+}
+
+#imgcamp{
+  height: 200px;
+  width: 200px;
+}
+#cxbotaoplay{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border: 3px solid white;
+  margin-left: 5px;
+  margin-top: 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+#cxbotaoplay:hover{
+  border: 3px solid #753eef;
+}
+#botaoplay{
+  height: 20px;
+  width: 20px;
+}
+#saiba{
+  position: absolute;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #2c2930;
+  border-radius: 5px;
+  margin-left: 100px;
+  margin-top: 28px;
+  font-weight: 600;
+  width: 90px;
+}
+#saiba:hover{
+  border: 3px solid #753eef;
+  background-color: transparent;
+}
+#points{
+  position: absolute;
+  margin-top: -275px;
+  margin-left: 44%;
+  z-index: 2;
+}
+#conteudo{
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  z-index: 1;
+  background-image: linear-gradient(to top, transparent, black 85%);
+}
+#conteudo img:hover{
+  border: 3px solid #753eef;
+  border-radius: 5px;
+}
+#continuar, #flash, #univ{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  height: 250px;
+}
+#continuar img{
+  height: 200px;
+  width: 200px;
+}
+#flash img{
+  height: 150px;
+  width: 275px;
+}
+#continuar div{
+  margin-left: 30px;
+}
+#flash{
+  margin-top: 30px;
+}
+#flash div{
+  margin-left: 10px;
+}
+#univ img{
+  height: 175px;
+  width: 175px;
+  
+}
+#univ div{
+  margin-left: 20px;
+}
+#univ div:first-child{
+  margin-left: 32px;
+}

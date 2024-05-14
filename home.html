@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HBO Max</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" href="img/post_29815 (1).jpg" type="image/x-icon">
+</head>
+
+<body>
+  <main>
+
+    <nav id="nav">
+      <a href="#"><img id="menu1" style="height: 25px; margin-top: 25px; width: 25px;" src="img/menu.png"
+          alt="menu icone"></a>
+      <a id="menu" href="#">Filmes</a>
+      <a id="menu" style="margin-left: 9.5%;" href="#">Séries</a>
+      <img id="menu2" style="height: 23px; margin-top: 30px;" src="img/logo.png" alt="hbo max logo">
+      <a href="#"><img id="menu3" style="height: 25px; margin-top: 30px; width: 25px;" src="img/pesquisa.png"
+          alt="pesquisa icone"></a>
+      <a href="#"><img style="margin-top: 15px;" id="menu4" src="img/perfil.png" alt="perfil icone"></a>
+    </nav>
+
+
+    <header>
+      <video autoplay muted loop id="myVideo">
+        <source src="video/UEFA.mp4" type="video/mp4">
+      </video>
+      <div id="preto"></div>
+      <div id="banner">
+        <img id="imgcamp" src="img/championslogo.png" alt="champions league logo">
+        <h3>Champios League</h3>
+        <p>Esta é a Liga dos campeões, oque será que nos aguarda esta temporada?</p>
+        <a id="cxbotaoplay" href="#"><img id="botaoplay" src="img/play-64.png" alt="play"></a>
+        <a id="saiba" href="#">SAIBA MAIS</a>
+      </div>
+
+      <img id="points" src="img/points.png">
+
+    </header>
+
+
+    <div id="conteudo">
+
+      <div style="background-color: black; width: 100%; display: flex;"><a
+          style="text-decoration: none; padding-left: 30px; padding-bottom: 10px; padding-top: 20px; font-size: 17px;"
+          href="#">
+          <h3>Continuar Assistindo ></h3>
+        </a></div>
+
+        <div id="continuar">
+        <div>
+          <img src="img/continue-ass/ctass_oamor.png" alt="">
+          <h4>O Amor Mandou mensagem</h4>
+        </div>
+        <div>
+          <img src="img/continue-ass/ctass_teentitans.png" alt="">
+          <h4>Jovens Titãs Go!</h4>
+        </div>
+        <div>
+          <img src="img/continue-ass/ctass_thelast.png" alt="">
+          <h4>The Last of Us</h4>
+        </div>
+        <div>
+          <img src="img/continue-ass/ctass_sovoce.png" alt="">
+          <h4>Só Você: Uma Coleção de Curtas de Animação</h4>
+        </div>
+        <div>
+          <img src="img/continue-ass/ctass_batman.png" alt="">
+          <h4>Batman: O Cavaleiro das Trevas</h4>
+        </div>
+        <div>
+          <img src="img/continue-ass/ctass_steven.png" alt="">
+          <h4>Steven Universo</h4>
+        </div>
+        <div>
+          <img src="img/continue-ass/ctass_jovens.png" alt="">
+          <h4>Teen Titans</h4>
+        </div>
+        <div>
+          <img src="img/continue-ass/ctass_amorte.png" alt="">
+          <h4>A Morte do Demônio: A Ascenção</h4>
+        </div>
+        <div>
+          <img src="img/continue-ass/ctass_ben.png" alt="">
+          <h4>Ben 10: Omniverse</h4>
+        </div>
+
+      </div>
+
+      <div style="width: 100%; display: flex;"><a
+          style="text-decoration: none; padding-left: 30px; padding-bottom: 10px; padding-top: 20px; font-size: 17px;"
+          href="#">
+          <h3 style="color: white;">O homem mais rápido do mundo chegou por aqui ></h3>
+        </a></div>
+
+      <div id="flash">
+        <div>
+          <img src="img/flash/img1.png" alt="">
+
+        </div>
+        <div>
+          <img src="img/flash/img2.png" alt="">
+
+        </div>
+        <div>
+          <img src="img/flash/img3.png" alt="">
+
+        </div>
+        <div>
+          <img src="img/flash/img4.png" alt="">
+
+        </div>
+        <div>
+          <img src="img/flash/img5.png" alt="">
+
+        </div>
+        <div>
+          <img src="img/flash/img6.png" alt="">
+
+        </div>
+
+      </div>
+
+      <div style="width: 100%; display: flex; margin-top: -80px;">
+        <a style="text-decoration: none; padding-left: 30px; padding-bottom: 10px; padding-top: 20px; font-size: 17px;" href="#">
+        <h3 style="color: white;">Universo HBO max! ></h3>
+        </a>
+      </div>
+
+
+      <div id="univ">
+        <div>
+          <img src="img/univ/hbo.png" alt="">
+        </div>
+        <div>
+          <img src="img/univ/yb.png" alt="">
+        </div>
+        <div>
+          <img src="img/univ/cartoon.png" alt="">
+        </div>
+        <div>
+          <img src="img/univ/DC.png" alt="">
+        </div>
+        <div>
+          <img src="img/univ/max.png" alt="">
+        </div>
+        <div>
+          <img src="img/univ/champions.png" alt="">
+        </div>
+
+
+      </div>
+      </div>
+
+  </main>
+</body>
+
+<script>
+  const navbar = document.getElementById('nav'); // elemento alvo
+  const tela = '500'; // Quantidade de pixels a contar do TOP até definir a cor
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > tela) {
+      navbar.classList.add('ficaPreto'); // adiciona classe "changeColor"
+    } else {
+      navbar.classList.remove('ficaPreto'); // remove classe "changeColor"
+    }
+  });
+</script>
+
+</html>
